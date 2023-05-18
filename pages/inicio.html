@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="C:\Users\Monic\Desktop\Cajero automatico\estilo\style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script defer src="C:\Users\Monic\Desktop\Cajero automatico\js\inicio.js"></script>
+</head>
+
+<body>
+    <main class="bg-dark text-white py-5">
+        <h1 class="text-center">¡Bienvenido!</h1>
+        <h3 id="userName" class="text-center"></h3>
+        <section class="container-sm pt-5">
+            <div class="d-grid gap-3 col-6 mx-auto">
+                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ModalSaldo"
+                type="button">Consultar Saldo</button>
+                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ModalIngreso"
+                type="button">Ingresar Saldo</button>
+                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ModalRetiro"
+                type="button">Retirar Saldo</button>
+            </div>
+        </section>
+
+        <section class="text-dark">
+<!-- Modal Saldo -->
+<div class="modal fade" id="modalSaldo" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title" id="exampleModalLabel">Consultar Saldo</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body text-dark" id="cuerpo-modal">
+    <div class="mb-3">
+        <label for exampleFormControlInput1" class="form-label">Su saldo es: </label>
+        <input type="number" class="form-control" id="suSaldoes:" placeholder="suSaldoes"
+        min="1" max="990">
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Ok</button>
+    </div>
+</section>
+  <!-- Modal Ingreso-->
+  <div class="modal fade" id="#ModalIngreso" tabindex="-1"aria-labelledby="exampleModalLabel" 
+  aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h1 class="modal-title fs-5" id="staticBackdropLabel">Monto a Ingresar</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body text-dark" id="cuerpo-modal">
+    <div class="mb-3">
+    <label for exampleFormControlInput1" class="form-label">Monto a ingresar: </label>
+    <input type="number" class="form-control" id="Ha Ingresado" placeholder="Ha Ingresado"
+    min="1" max="990">
+    </div>
+     <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Ok</button>
+        </div>
+      </div>
+            </div>
+
+ <!-- MODAL RETIRO -->
+ <div class="modal fade" id="#ModalRetiro" tabindex="-1"aria-labelledby="exampleModalLabel" 
+ aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h1 class="modal-title" id="exampleModalLabel">Retiro de Saldo</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body text-dark" id="cuerpo-modal"></div>">
+    <div class="mb-3">
+    <label for exampleFormControlInput1" class="form-label">Monto a Retirar: </label>
+    <input type="number" class="form-control" id="Ha Retirado" placeholder="Ha Retirado"
+        min="1" max="990">
+    </div>
+    <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+             <button type="button" class="btn btn-primary">Ok</button>
+         </div>
+     </div>
+ </div>
+</div>
+
+</body>
+
+</html>

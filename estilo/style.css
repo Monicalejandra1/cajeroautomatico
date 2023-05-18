@@ -1,0 +1,102 @@
+:root {
+  font-size: 16px;
+  color: white;
+}
+
+main {
+  height: 100vh;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 class{
+font-family:Arial, Helvetica, sans-serif;
+color: blue;
+text-align: center;
+}
+body {
+    background: #2c3e50;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: white;
+  }
+  
+  .main-title {
+    text-align: center;
+  }
+  
+  .home-post {
+    border: 2px solid tomato;
+    padding: 0.4rem;
+    margin: 1rem 0;
+  }
+  
+  .home-post h1 {
+    color: rgb(14, 101, 222);
+  }
+  
+  .custom-title {
+    color: rgb(176, 120, 16);
+    text-align: center;
+  }
+  
+  .photo {
+    width: 200px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #contenedor {
+    align-self: center;
+    max-width: 200px;
+    height: 100px;
+    margin-top: 1rem;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #boton {
+    align-self: center;
+    max-width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: navy;
+    color: white;
+    cursor: pointer;
+  }
+
+.secciondisponible{
+    height:500px;
+    width: 800px;
+}
+
+.secciondisponible#opciones{
+    background-color: red;
+}
+
+.secciondisponible#consulta{
+    background-color:white;
+}
+
+.secciondisponible#ingresos{
+    background-color: green;
+}
+
+.secciondisponible#retiros{
+    background-color:blue;
+}
