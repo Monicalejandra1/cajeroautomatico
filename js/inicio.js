@@ -15,3 +15,17 @@ if(saldo) {
 const ingresar = localStorage.getItem('ingresar');
 
 form.addEventListener('SubmitEvent',e=>{console.log(event.target.cantidad)});
+
+/*Ingresar Saldo*/
+
+function sumar (saldoMali,saldoIngresado){
+return saldoMali + saldoIngresado;
+}
+
+function sumar (saldoJos,saldoIngresado){
+    return saldoJos + saldoIngresado;
+    }
+
+function sumar (saldoAlex,saldoIngresado){
+        return saldoAlex + saldoIngresado;
+        }
